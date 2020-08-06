@@ -1,0 +1,41 @@
+{
+  "name": "OnHubAuthHelper",
+  "version": "1.0",
+  "manifest_version": 2,
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "https://accounts.google.com/embedded/setup/v2/safarivc/*",
+    "cookies",
+    "https://accounts.google.com/embedded/close"
+  ],
+  "background": {
+    "scripts": [
+      "js/safarivcHR.js",
+      "js/jquery.min.js"
+    ],
+    "persistent": true
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://accounts.google.com/embedded/setup/v2/safarivc/*"
+      ],
+      "js": [
+        "js/loginPage.js"
+      ]
+    },
+    {
+      "matches": [
+        "https://accounts.google.com/embedded/close"
+      ],
+      "js": [
+        "js/jquery.min.js",
+        "js/tokenPage.js"
+      ]
+    }
+  ],
+  "browser_action": {
+    "default_popup": "popup.html"
+  }
+}

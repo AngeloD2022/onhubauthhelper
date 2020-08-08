@@ -20,7 +20,7 @@
   "content_scripts": [
     {
       "matches": [
-        "https://accounts.google.com/embedded/setup/v2/safarivc/*"
+        "https://accounts.google.com/embedded/setup/v2/safarivc/*?*"
       ],
       "js": [
         "js/loginPage.js"

@@ -1,4 +1,5 @@
 chrome.runtime.sendMessage("authcode", function (response) {
+    return true;
 });
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {

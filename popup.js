@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    $("#authadvicebtn").click(function (){
+    $("#authadvicebtn").click(function () {
         synthesizeDataAndRequest();
     })
 
@@ -20,7 +20,7 @@ function randomString(length) {
 
 
 function synthesizeDataAndRequest() {
-    $("#authadvicebtn").prop("disabled",true);
+    $("#authadvicebtn").prop("disabled", true);
     $("#authadvicebtn").text("Loading...");
     var devname = $("#devname").val();
     $("#step2").show();

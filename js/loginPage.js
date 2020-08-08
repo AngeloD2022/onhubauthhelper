@@ -5,11 +5,11 @@ var box = document.getElementById("view_container");
 box.appendChild(g);
 var btn = document.getElementsByClassName("VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8QpJ VfPpkd-LgbsSe-OWXEXe-dgl2Hf nCP5yc AjY5Oe DuMIQc qIypjc TrZEUc")[0];
 
-btn.addEventListener("click",function (){
+btn.addEventListener("click", function () {
     box.removeChild(g);
-        setTimeout(function(){
+    setTimeout(function () {
         console.log("done")
         box.appendChild(g);
-    },1000);
+    }, 1000);
 
 })

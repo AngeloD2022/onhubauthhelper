@@ -1,5 +1,5 @@
-
-chrome.runtime.sendMessage("authcode", function (response) {});
+chrome.runtime.sendMessage("authcode", function (response) {
+});
 
 chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
 
@@ -29,7 +29,7 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
             notice.innerHTML = "<strong>The refresh token will last a long time. You do not have to do this again unless you need another!</strong>";
             document.body.appendChild(notice);
         },
-        error: function(request,status,errror){
+        error: function (request, status, errror) {
             var notice = document.createElement("p");
             notice.style.color = "red";
             notice.innerHTML = "<strong>OnHubAuthHelper:</strong> An error occurred while exchanging the OAuth Code.";
@@ -38,7 +38,6 @@ chrome.runtime.onMessage.addListener(function (msg, sender, sendResponse) {
     });
 
 });
-
 
 function copyToClipboard(txt) {
     const x = document.createElement('textarea');

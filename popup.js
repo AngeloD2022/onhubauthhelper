@@ -79,3 +79,4 @@ function doAuthAdvice(devname, uuid, devicechallenge, clientstate) {
     });
 
 }
+

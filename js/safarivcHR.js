@@ -7,5 +7,5 @@ chrome.webRequest.onBeforeSendHeaders.addListener(function (details){
         }
     }
     return {requestHeaders: details.requestHeaders};
-},{urls: ['https://accounts.google.com/embedded/setup/v2/safarivc/*']},
+},{urls: ['https://accounts.google.com/embedded/setup/v2/safarivc?*']},
     [ 'blocking', 'requestHeaders'])

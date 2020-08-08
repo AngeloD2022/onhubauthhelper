@@ -11,8 +11,9 @@
   ],
   "background": {
     "scripts": [
+      "js/jquery.min.js",
       "js/safarivcHR.js",
-      "js/jquery.min.js"
+      "js/getauthcode.js"
     ],
     "persistent": true
   },

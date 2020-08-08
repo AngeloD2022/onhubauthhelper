@@ -7,9 +7,7 @@ var btn = document.getElementsByClassName("VfPpkd-LgbsSe VfPpkd-LgbsSe-OWXEXe-k8
 
 btn.addEventListener("click",function (){
     box.removeChild(g);
-    // g = document.createElement("p");
-    // g.innerHTML = "Please note that this is a one-time process when using the OnHub API. You do not need more than one refresh token and only need to sign in once.";
-    setTimeout(function(){
+        setTimeout(function(){
         console.log("done")
         box.appendChild(g);
     },1000);

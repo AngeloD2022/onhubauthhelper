@@ -1,18 +1,17 @@
 {
   "name": "OnHubAuthHelper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "manifest_version": 2,
   "permissions": [
     "webRequest",
     "webRequestBlocking",
-    "https://accounts.google.com/embedded/setup/v2/safarivc/*",
-    "cookies",
-    "https://accounts.google.com/embedded/close"
+    "https://accounts.google.com/ServiceLogin/webreauth?*",
+    "https://accounts.google.com/o/oauth2/programmatic_auth?*",
+    "cookies"
   ],
   "background": {
     "scripts": [
       "js/jquery.min.js",
-      "js/safarivcHR.js",
       "js/getauthcode.js"
     ],
     "persistent": true
@@ -20,18 +19,12 @@
   "content_scripts": [
     {
       "matches": [
-        "https://accounts.google.com/embedded/setup/v2/safarivc/*?*"
-      ],
-      "js": [
-        "js/loginPage.js"
-      ]
-    },
-    {
-      "matches": [
-        "https://accounts.google.com/embedded/close"
+        "https://accounts.google.com/ServiceLogin/webreauth*",
+        "https://accounts.google.com/o/oauth2/programmatic_auth*"
       ],
       "js": [
         "js/jquery.min.js",
+        "js/loginPage.js",
         "js/tokenPage.js"
       ]
     }

@@ -1,20 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" charset="UTF-8">
     <title>OnHubAuthHelper</title>
 </head>
+
 <body>
-<h2 style="margin-bottom: 20px">OnHub Authorization Helper</h2>
-<div style="width:300px;height:100px">
-    <input id="devname" type="text" placeholder="Device Name">
-    <button style="margin-top: 8px" id="authadvicebtn">Fetch Consent Screen</button>
-    <hr>
-    <p>Written by <a target="_blank" href="https://www.angelod.com">Angelo DeLuca</a></p>
-    <p style="margin-bottom: 8px"><a target="_blank" href="https://github.com/AngeloD2022/onhubauthhelper">Extension Source Code</a></p>
-</div>
-<script src="popup.js"></script>
-<script src="js/jquery.min.js"></script>
+    <h2 style="margin-bottom: 20px">OnHub Authorization Helper</h2>
+    <div style="width:300px;height:100px">
+        <button style="margin-top: 8px" id="openlogin">Open Consent Page</button>
+        <hr>
+        <p>Written by <a target="_blank" href="https://www.angelod.com">Angelo DeLuca</a>, with OAuth fixes by <a target="_blank" href="https://www.r3pwn.com">Greg Willard</a></p>
+        <p style="margin-bottom: 8px">
+            <a target="_blank" href="https://github.com/AngeloD2022/onhubauthhelper">Extension Source Code</a>
+        </p>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/tokenPage.js"></script>
+    <script src="popup.js"></script>
 </body>
+
 </html>
